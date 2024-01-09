@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  sqlite:
+    image: ubuntu:latest
+    volumes:
+      - ./data:/data
+    working_dir: /data
+    command: >
+      /bin/bash -c "
+      apt-get update &&
+      apt-get install -y sqlite3 &&
+      while true; do sleep 1000; done
+      "
