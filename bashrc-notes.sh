@@ -3,6 +3,8 @@ export PROMPT_DIRTRIM=3
 alias alc="code ~/.bashrc"
 alias ali="source ~/.bashrc"
 alias cdd="cd ~/code"
+alias pss='psql '\''postgresql://postgres:password@localhost:5432/database-name'\'
+
 
 _trash() { mv "$1" "/home/robert/Trash/"; }
 #This will send files to Trash bin instead
